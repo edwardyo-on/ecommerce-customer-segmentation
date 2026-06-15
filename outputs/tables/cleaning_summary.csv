@@ -1,0 +1,7 @@
+metric,value
+Original rows,541909.0
+Cleaned rows,397884.0
+Rows removed,144025.0
+Unique customers,4338.0
+Unique invoices,18532.0
+Total revenue,8911407.904

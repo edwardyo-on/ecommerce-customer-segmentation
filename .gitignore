@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Raw data / local database
+/data/*.xlsx
+/database/*.db
+
+# OS / editor
+.DS_Store
+.vscode/
+
+# Environment
+.venv/
+venv/
+.env

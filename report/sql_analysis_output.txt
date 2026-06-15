@@ -1,0 +1,137 @@
+
+1. Data quality summary
+total_rows  missing_customerid_rows  non_positive_quantity_rows  non_positive_unitprice_rows  canceled_invoice_rows
+----------  -----------------------  --------------------------  ---------------------------  ---------------------
+397884      0                        0                           0                            0                    
+
+2. Cleaned transaction summary
+cleaned_rows  unique_customers  unique_orders  unique_products  total_revenue  first_transaction_date  last_transaction_date
+------------  ----------------  -------------  ---------------  -------------  ----------------------  ---------------------
+397884        4338              18532          3665             8911407.9      2010-12-01 08:26:00     2011-12-09 12:50:00  
+
+3. Revenue summary by customer segment
+customer_segment         customers  customer_percentage  avg_recency  avg_frequency  avg_monetary_value  avg_order_value  total_revenue  revenue_percentage
+-----------------------  ---------  -------------------  -----------  -------------  ------------------  ---------------  -------------  ------------------
+Champions                184        4.24                 8.48         26.36          20230.8             748.88           3722467.91     41.77             
+Loyal Customers          859        19.8                 23.9         8.09           2871.76             366.77           2466840.67     27.68             
+Needs Attention          1406       32.41                86.85        2.5            859.68              364.4            1208716.46     13.56             
+Recent High-Value        225        5.19                 15.0         3.28           2653.3              997.92           596992.13      6.7               
+New/Potential Customers  803        18.51                29.94        1.47           448.29              315.81           359978.05      4.04              
+Inactive/Low Engagement  764        17.61                273.87       1.2            348.02              292.95           265887.35      2.98              
+At-Risk High-Value       24         0.55                 258.63       4.75           9812.25             5654.14          235493.89      2.64              
+At Risk                  73         1.68                 227.64       3.67           753.86              212.51           55031.44       0.62              
+
+4. Top 10 products by revenue
+stockcode  description                         total_quantity  total_revenue  unique_customers  total_orders  avg_revenue_per_order
+---------  ----------------------------------  --------------  -------------  ----------------  ------------  ---------------------
+23843      PAPER CRAFT , LITTLE BIRDIE         80995           168469.6       1                 1             168469.6             
+22423      REGENCY CAKESTAND 3 TIER            12402           142592.95      881               1703          83.73                
+85123A     WHITE HANGING HEART T-LIGHT HOLDER  36725           100448.15      856               1971          50.96                
+85099B     JUMBO BAG RED RETROSPOT             46181           85220.78       635               1600          53.26                
+23166      MEDIUM CERAMIC TOP STORAGE JAR      77916           81416.73       138               195           417.52               
+47566      PARTY BUNTING                       15291           68844.33       708               1379          49.92                
+84879      ASSORTED COLOUR BIRD ORNAMENT       35362           56580.34       678               1375          41.15                
+23084      RABBIT NIGHT LIGHT                  27202           51346.2        450               801           64.1                 
+79321      CHILLI LIGHTS                       9650            46286.51       205               519           89.18                
+22086      PAPER CHAIN KIT 50'S CHRISTMAS      15617           42660.83       613               980           43.53                
+
+5. Revenue by country
+country               total_revenue  revenue_percentage  unique_customers  total_orders  avg_order_revenue
+--------------------  -------------  ------------------  ----------------  ------------  -----------------
+United Kingdom        7308391.55     82.01               3920              16646         439.05           
+Netherlands           285446.34      3.2                 9                 94            3036.66          
+EIRE                  265545.9       2.98                3                 260           1021.33          
+Germany               228867.14      2.57                94                457           500.8            
+France                209024.05      2.35                87                389           537.34           
+Australia             138521.31      1.55                9                 57            2430.2           
+Spain                 61577.11       0.69                30                90            684.19           
+Switzerland           56443.95       0.63                21                51            1106.74          
+Belgium               41196.34       0.46                25                98            420.37           
+Sweden                38378.33       0.43                8                 36            1066.06          
+Japan                 37416.37       0.42                8                 19            1969.28          
+Norway                36165.44       0.41                10                36            1004.6           
+Portugal              33439.89       0.38                19                57            586.66           
+Finland               22546.08       0.25                12                41            549.9            
+Singapore             21279.29       0.24                1                 7             3039.9           
+Channel Islands       20450.44       0.23                9                 26            786.56           
+Denmark               18955.34       0.21                9                 18            1053.07          
+Italy                 17483.24       0.2                 14                38            460.09           
+Cyprus                13590.38       0.15                8                 16            849.4            
+Austria               10198.68       0.11                11                17            599.92           
+Poland                7334.65        0.08                6                 19            386.03           
+Israel                7221.69        0.08                3                 5             1444.34          
+Greece                4760.52        0.05                4                 5             952.1            
+Iceland               4310.0         0.05                1                 7             615.71           
+Canada                3666.38        0.04                4                 6             611.06           
+USA                   3580.39        0.04                4                 5             716.08           
+Malta                 2725.59        0.03                2                 5             545.12           
+Unspecified           2667.07        0.03                4                 8             333.38           
+United Arab Emirates  1902.28        0.02                2                 3             634.09           
+Lebanon               1693.88        0.02                1                 1             1693.88          
+Lithuania             1661.06        0.02                1                 4             415.26           
+European Community    1300.25        0.01                1                 4             325.06           
+Brazil                1143.6         0.01                1                 1             1143.6           
+RSA                   1002.31        0.01                1                 1             1002.31          
+Czech Republic        826.74         0.01                1                 2             413.37           
+Bahrain               548.4          0.01                2                 2             274.2            
+Saudi Arabia          145.92         0.0                 1                 1             145.92           
+
+6. Top 10 customers by revenue
+customerid  recency  frequency  monetary_value  revenue_percentage  avg_order_value  max_order_value  unique_products  customer_segment  
+----------  -------  ---------  --------------  ------------------  ---------------  ---------------  ---------------  ------------------
+14646       2.0      73         280206.02       3.14                3838.44          20277.92         700              Champions         
+18102       1.0      60         259657.3        2.91                4327.62          22206.0          150              Champions         
+17450       9.0      46         194550.79       2.18                4229.36          31698.16         124              Champions         
+16446       1.0      2          168472.5        1.89                84236.25         168469.6         3                Recent High-Value 
+14911       2.0      201        143825.06       1.61                715.55           4345.1           1787             Champions         
+12415       25.0     21         124914.53       1.4                 5948.31          22775.93         444              Champions         
+14156       10.0     55         117379.63       1.32                2134.18          16774.72         714              Champions         
+17511       3.0      31         91062.38        1.02                2937.5           7059.54          453              Champions         
+16029       39.0     63         81024.84        0.91                1286.11          8142.75          44               Loyal Customers   
+12346       326.0    1          77183.6         0.87                77183.6          77183.6          1                At-Risk High-Value
+
+7. Revenue concentration by customer decile
+revenue_decile  customers  total_revenue  revenue_percentage
+--------------  ---------  -------------  ------------------
+1               434        5469382.46     61.38             
+2               434        1180055.0      13.24             
+3               434        728457.38      8.17              
+4               434        491753.71      5.52              
+5               434        344466.86      3.87              
+6               434        252716.63      2.84              
+7               434        179720.0       2.02              
+8               434        132016.26      1.48              
+9               433        86895.44       0.98              
+10              433        45944.16       0.52              
+
+8. Top customer revenue concentration
+customer_group       customers  total_revenue  revenue_percentage
+-------------------  ---------  -------------  ------------------
+Top 10%              433        5465733.36     61.33             
+Top 20%              434        1181644.65     13.26             
+Remaining Customers  3471       2264029.89     25.41             
+
+9. Segment action plan
+customer_segment         business_priority  recommended_action                                            customers  total_revenue  revenue_percentage
+-----------------------  -----------------  ------------------------------------------------------------  ---------  -------------  ------------------
+Champions                Very High          Reward with VIP offers, loyalty perks, and early product acc  184        3722467.91     41.77             
+                                            ess.                                                                                                      
+
+Loyal Customers          High               Use personalized recommendations and loyalty campaigns to in  859        2466840.67     27.68             
+                                            crease repeat purchases.                                                                                  
+
+Needs Attention          Medium             Monitor behavior and test targeted engagement campaigns.      1406       1208716.46     13.56             
+
+Recent High-Value        High               Encourage a second purchase with targeted bundles or limited  225        596992.13      6.7               
+                                            -time offers.                                                                                             
+
+New/Potential Customers  Medium             Send onboarding emails and product discovery recommendations  803        359978.05      4.04              
+                                            .                                                                                                         
+
+Inactive/Low Engagement  Low                Limit marketing spend unless the customer has strong histori  764        265887.35      2.98              
+                                            cal value.                                                                                                
+
+At-Risk High-Value       Very High          Prioritize win-back campaigns with personalized discounts or  24         235493.89      2.64              
+                                             direct outreach.                                                                                         
+
+At Risk                  Medium             Use reactivation campaigns and reminder offers.               73         55031.44       0.62              
