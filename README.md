@@ -1,5 +1,11 @@
 # E-Commerce Customer Segmentation Analysis
 
+## Executive Summary
+
+This project analyzes 397,884 cleaned online retail transactions from 4,338 customers to identify customer segments, revenue concentration, top products, and country-level revenue drivers.
+
+The main finding is that customer revenue is highly concentrated: the top 10% of customers generated 61.3% of total revenue, while the top 20% generated 74.6%. Based on these findings, the analysis recommends prioritizing Champions and Loyal Customers for retention campaigns while targeting At-Risk High-Value customers with win-back campaigns.
+
 ## Project Overview
 
 This project analyzes online retail transaction data to identify customer segments, revenue concentration, top products, and country-level revenue drivers. It uses Python for data cleaning, RFM analysis, visualization, and exportable summary tables, then recreates the core analysis workflow in SQL using SQLite.
@@ -74,6 +80,23 @@ ecommerce-customer-segmentation/
 10. Recreate the core analysis using SQL.
 11. Export visuals and a business summary report.
 
+
+## Project Workflow
+
+```text
+Raw Excel Data
+      ↓
+Python Cleaning + Feature Engineering
+      ↓
+Clean CSV Outputs
+      ↓
+SQLite Database
+      ↓
+SQL Analysis
+      ↓
+Visualizations + Business Recommendations
+```
+
 ## Customer Segments
 
 * Champions
@@ -85,6 +108,7 @@ ecommerce-customer-segmentation/
 * At Risk
 * Inactive/Low Engagement
 
+
 ## Key Findings
 
 * The cleaned dataset contains 397,884 valid transactions and 4,338 unique customers.
@@ -95,6 +119,19 @@ ecommerce-customer-segmentation/
 * At-Risk High-Value customers are important targets for win-back campaigns.
 * Some top products are broad sellers, while others appear to be bulk-purchase outliers.
 * Revenue is heavily concentrated in the United Kingdom.
+
+
+## Business Impact
+
+This analysis helps an e-commerce business prioritize marketing and retention efforts by identifying which customer groups generate the most revenue.
+
+Key business takeaways:
+
+- High-value customers should receive more targeted retention investment because revenue is concentrated among a small customer group.
+- Champions and Loyal Customers are the strongest candidates for loyalty rewards, personalized offers, and early product access.
+- At-Risk High-Value customers should be prioritized for win-back campaigns because they have strong historical value but lower recent engagement.
+- Broad, equal marketing spend across all customers may be inefficient because the top 10% of customers generated 61.3% of revenue.
+- Product outliers should be reviewed before making merchandising or inventory decisions.
 
 ## Business Recommendations
 
@@ -195,6 +232,13 @@ These visuals support the final business recommendations and make the project ea
 * RFM segmentation identifies useful customer patterns but does not prove that a specific marketing action will cause retention.
 * Product outliers may reflect bulk purchases or unusual transactions and should be reviewed before campaign decisions.
 
-## Skills Demonstrated
+## Skills 
 
-This project demonstrates data cleaning, feature engineering, customer segmentation, SQL analysis, business interpretation, visualization, and clear communication of recommendations.
+- Data cleaning and validation using Python and pandas
+- Feature engineering with RFM customer metrics
+- Customer segmentation and revenue concentration analysis
+- SQL querying using SQLite, aggregation, filtering, and window functions
+- Business analysis and customer retention strategy
+- Data visualization and dashboard-ready reporting
+- Communication of findings through written business recommendations
+
