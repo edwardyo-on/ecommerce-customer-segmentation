@@ -210,20 +210,25 @@ The notebook creates:
 * visualization PNGs
 * a written business summary report
 
-## Visualizations
+## Key Visualizations
 
-The project exports chart images to the `visuals/` folder, including:
+The project exports chart images to the `visuals/` folder. These visuals summarize customer segments, revenue concentration, product performance, and country-level revenue patterns.
 
-* customer recency distribution
-* customer frequency distribution
-* customer monetary value distribution
-* customer count by segment
-* revenue by customer segment
-* top products by revenue
-* top countries by revenue
-* cumulative revenue share by customer rank
+### Revenue by Customer Segment
+![Revenue by Customer Segment](visuals/05_revenue_by_customer_segment.png)
 
-These visuals support the final business recommendations and make the project easier to review without rerunning the notebook.
+### Customer Count by Segment
+![Customer Count by Segment](visuals/04_customer_count_by_segment.png)
+
+### Customer Revenue Concentration
+![Customer Revenue Concentration](visuals/08_cumulative_revenue_share.png)
+
+### Top Products by Revenue
+![Top Products by Revenue](visuals/06_top_products_by_revenue.png)
+
+### Top Countries by Revenue
+![Top Countries by Revenue](visuals/07_top_countries_by_revenue.png)
+
 
 ## Limitations
 
