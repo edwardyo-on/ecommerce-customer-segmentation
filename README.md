@@ -12,6 +12,8 @@ This project analyzes online retail transaction data to identify customer segmen
 
 The goal is to turn raw transaction data into practical business recommendations for customer retention, win-back campaigns, and marketing prioritization.
 
+**Interactive Dashboard:** [View Tableau Dashboard](https://public.tableau.com/app/profile/edward.yoon/viz/ecommercedash_17833880331860/E-CommerceCustomerSegmentationDashboard)
+
 ## Business Questions
 
 1. Which customer segments generate the most revenue?
@@ -31,6 +33,7 @@ The goal is to turn raw transaction data into practical business recommendations
 * SQLite
 * SQL
 * VS Code
+* Tableau
 * Git / GitHub
 
 ## Project Structure
@@ -229,6 +232,13 @@ The project exports chart images to the `visuals/` folder. These visuals summari
 ### Top Countries by Revenue
 ![Top Countries by Revenue](visuals/07_top_countries_by_revenue.png)
 
+## Tableau Dashboard
+
+This project includes an executive Tableau dashboard summarizing customer segments, revenue concentration, top products, and country-level revenue.
+
+[View the Tableau Dashboard](https://public.tableau.com/app/profile/edward.yoon/viz/ecommercedash_17833880331860/E-CommerceCustomerSegmentationDashboard)
+
+![Tableau Dashboard Screenshot](visuals/tableau_dashboard_screenshot.png)
 
 ## Limitations
 
